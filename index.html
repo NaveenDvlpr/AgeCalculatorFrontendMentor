@@ -9,25 +9,44 @@
   <title>Frontend Mentor | Age calculator app</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aubrey&family=Poppins:ital,wght@1,800&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="app.js" defer></script>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <div id="container">
+    <div id="inp" class="cntchild">
+      <div class="inpCtrls">
+        <label for="inpDay" id="daylabel">DAY</label>
+        <input type="number" name="" id="inpDay" placeholder="DD">
+        <p id="dayerr" class="errmsg"></p>
+      </div>
+      <div class="inpCtrls">
+        <label for="inpMonth" id="monthlabel">MONTH</label>
+        <input type="number" name="" id="inpMonth" placeholder="MM">
+        <p id="monerr" class="errmsg"></p>
+      </div>
+      <div class="inpCtrls">
+        <label for="inpYear" id="yearlabel">YEAR</label>
+        <input type="number" name="" id="inpYear" placeholder="YYYY">
+        <p id="yearerr" class="errmsg"></p>
+      </div>
+    </div>
+    <div class="cntchild" id="break">
+      <img src="assets/images/icon-arrow.svg" alt="icon-arrow-svg" id="btn"></div>
+    <div id="op" class="cntchild">
+      <div><span id="opYears">--</span><span>years</span></div>
+      <div><span id="opMonths">--</span><span>months</span></div>
+      <div><span id="opDays">--</span><span>days</span></div>
+    </div>
+  </div>
   
-  <div class="attribution">
+  <!--
+<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Naveen Moyya</a>.
   </div>
+  -->
 </body>
 </html>

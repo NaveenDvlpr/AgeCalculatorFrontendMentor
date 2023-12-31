@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: hsl(0, 0%, 100%);
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+    border-bottom-right-radius: 200px;
+}
+
+#container .cntchild {
+    margin: 3rem;
+}
+
+#inp {
+    width: 80%;
+    display: flex;
+}
+
+#inp .inpCtrls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+#inp input[type=number] {
+    width: 9rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 5px;
+    caret-color: hsl(259, 100%, 65%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#inp input[type=number]:hover {
+    cursor: pointer;
+}
+
+#inp input[type=number]:focus {
+    outline: none;
+}
+
+.inpCtrls label {
+    margin-bottom: .2rem;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: hsl(0, 1%, 44%);
+}
+
+#break {
+    border: 1px solid rgba(168, 163, 163, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#op {
+    font-size: 5.25rem;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: "Poppins", sans-serif;
+}
+
+#op div span:first-child {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: .5rem;
+}
+
+.errmsg {
+    color: hsl(0, 100%, 67%);
+}
+
+#btn {
+    background-color: hsl(259, 100%, 65%);
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#btn:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+
+    #op {
+        font-size: 6.5rem;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    #inp .inpCtrls {
+        margin-right: 0rem;
+    }
+    #inp { 
+        justify-content: space-around;
+    }
+    #inp input[type=number] {
+        width: 7rem;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    #break {
+        justify-content: center;
+    }
+
+    #container {
+        width: 80%;
+    }
+    #inp {
+        padding-bottom: 1rem;
+    }
+    #op {
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    #container {
+        margin-top: 1rem;
+        width: 92%;
+        height: 85%;
+    }
+    #op {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    #inp input[type=number] {
+        width: 5rem;
+        font-size: 1.5rem;
+    }
+    #inp {
+        justify-content: space-between;
+        width: 90%;
+    }
+    
+    #inp .inpCtrls label {
+        font-size: .9rem;
+    }
+
+    #container .cntchild {
+        margin: 1rem;
+    }
+    #op {
+        font-size: 3.5rem;
+    }
+    #btn {
+        width: 60px;
+    }
+}
