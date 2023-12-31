@@ -102,13 +102,6 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
 }
 
-@media (min-width: 1200px) {
-
-    #op {
-        font-size: 6.5rem;
-    }
-
-}
 
 @media (max-width: 1200px) {
     #inp .inpCtrls {
@@ -152,7 +145,7 @@ input::-webkit-inner-spin-button {
         height: 85%;
     }
     #op {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
 }
 
